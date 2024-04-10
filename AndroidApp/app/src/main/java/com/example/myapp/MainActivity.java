@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView ivAvatar = findViewById(R.id.imageView);
 //        String url = "https://i.pinimg.com/564x/a8/4b/94/a84b94d816597cea9c83cb64d9d7e0e7.jpg";
-        String url = "http://10.0.2.2:5094/images/1.jpg";
+//        String url = "http://10.0.2.2:5094/images/1.jpg";
+        String url = "https://pv116.itstep.click/images/1.jpg";
         Glide.with(this)
                 .load(url)
                 .apply(new RequestOptions().override(400))
