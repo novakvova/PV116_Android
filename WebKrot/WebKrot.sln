@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebKrot", "WebKrot\WebKrot.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{16AFB9ED-0F17-4B30-AE31-D28084164D42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C242FB13-8F69-47E7-87A8-1310BFD64DCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{16AFB9ED-0F17-4B30-AE31-D28084164D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16AFB9ED-0F17-4B30-AE31-D28084164D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16AFB9ED-0F17-4B30-AE31-D28084164D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C242FB13-8F69-47E7-87A8-1310BFD64DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C242FB13-8F69-47E7-87A8-1310BFD64DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C242FB13-8F69-47E7-87A8-1310BFD64DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C242FB13-8F69-47E7-87A8-1310BFD64DCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
