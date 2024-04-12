@@ -1,6 +1,7 @@
 using Microsoft.Extensions.FileProviders;
 using Infrastructure;
 using Core;
+using Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,5 +47,7 @@ app.UseStaticFiles(new StaticFileOptions
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.SeedData();
 
 app.Run();
