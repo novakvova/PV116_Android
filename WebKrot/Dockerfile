@@ -4,11 +4,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /source
 
 # copy csproj and restore as distinct layers
-COPY WebKrot/*.csproj .
-RUN dotnet restore --use-current-runtime  
+COPY ["Core/Core.csproj", "Core/"]
+COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
+COPY ["WebKrot/WebKrot.csproj", "WebKrot/"]
+RUN dotnet restore "WebKrot/WebKrot.csproj"
 
 # copy everything else and build app
-COPY WebKrot/. .
+COPY . .
+WORKDIR /source/WebKrot
 RUN dotnet publish -o /app
 
 
