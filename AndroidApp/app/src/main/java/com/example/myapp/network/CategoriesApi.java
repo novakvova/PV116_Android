@@ -20,6 +20,6 @@ public interface CategoriesApi {
 
     @Multipart
     @POST("/api/category/createcategory")
-    public Call<CategoryItemDTO> create(@PartMap Map<String, RequestBody> params,
+    public Call<Void> create(@PartMap Map<String, RequestBody> params,
                                         @Part MultipartBody.Part image);
 }
