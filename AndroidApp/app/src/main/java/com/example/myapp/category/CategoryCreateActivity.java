@@ -132,7 +132,7 @@ public class CategoryCreateActivity extends BaseActivity {
             if (filePath != null) {
                 File imageFile = new File(filePath);
                 RequestBody requestFile = RequestBody.create(MediaType.parse("image/*"), imageFile);
-                imagePart = MultipartBody.Part.createFormData("image", imageFile.getName(), requestFile);
+                imagePart = MultipartBody.Part.createFormData("imageFile", imageFile.getName(), requestFile);
             }
 
             ApplicationNetwork.getInstance()
